@@ -37,7 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
     filterButtons.forEach(btn => {
       const active = normalize(btn.dataset.filter) === f;
       btn.classList.toggle('is-active', active);
-      btn.setAttribute('aria-selected', active ? 'true' : 'false');
+      if (btn.hasAttribute('aria-selected')) {
+        btn.setAttribute('aria-selected', active ? 'true' : 'false');
+      }
+      if (btn.hasAttribute('aria-pressed')) {
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      }
     });
 
     // Show/hide cards + collections
@@ -128,6 +133,21 @@ document.addEventListener('DOMContentLoaded', () => {
         setSlide(Number(dot.dataset.carouselDot || 0));
         startAutoplay();
       });
+
+      dot.addEventListener('keydown', (event) => {
+        if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+        event.preventDefault();
+
+        let nextIndex = index;
+        if (event.key === 'ArrowLeft') nextIndex = index - 1;
+        if (event.key === 'ArrowRight') nextIndex = index + 1;
+        if (event.key === 'Home') nextIndex = 0;
+        if (event.key === 'End') nextIndex = slides.length - 1;
+
+        setSlide(nextIndex);
+        dots[index]?.focus();
+        startAutoplay();
+      });
     });
 
     carousel.addEventListener('mouseenter', stopAutoplay);
@@ -168,6 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const galleryShots = Array.from(document.querySelectorAll('[data-shot]'));
   let currentShotIndex = -1;
   let currentShotGroup = [];
+  let lastFocusedElement = null;
 
   const getShotGroupName = (shot) => shot.dataset.shotGroup || '__default__';
   const getShotGroup = (shot) => {
@@ -182,6 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
     closeBtn.setAttribute('aria-label', 'Close image viewer');
     closeBtn.textContent = 'X';
     lightbox.appendChild(closeBtn);
+  }
+
+  if (lightbox) {
+    lightbox.setAttribute('role', 'dialog');
+    lightbox.setAttribute('aria-modal', 'true');
+    lightbox.setAttribute('aria-label', 'Image viewer');
   }
 
   let prevBtn = lightbox ? lightbox.querySelector('.dm-lightbox-nav--prev') : null;
@@ -226,6 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const open = (src, alt, shotIndex = -1, shotGroup = []) => {
     if (!lightbox || !lightboxImg) return;
+    lastFocusedElement = document.activeElement;
     if (shotIndex >= 0 && shotGroup.length) {
       currentShotGroup = shotGroup;
       showShotAt(shotIndex);
@@ -241,6 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
       lightbox.style.display = 'flex';
     }
     lightbox.setAttribute('aria-hidden', 'false');
+    closeBtn?.focus();
   };
 
   const close = () => {
@@ -253,6 +282,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lightboxImg) lightboxImg.src = '';
     currentShotGroup = [];
     currentShotIndex = -1;
+    if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+      lastFocusedElement.focus();
+    }
+    lastFocusedElement = null;
   };
 
   const stepLightbox = (direction) => {

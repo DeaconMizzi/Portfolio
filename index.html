@@ -3,36 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Deacon Mizzi, a UI/UX designer and interactive developer creating digital products, visual systems, web applications, games, and tools." />
   <title>Deacon Mizzi - Portfolio</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-  <!-- Core theme CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
   <link href="css/styles.css" rel="stylesheet" />
   <link href="css/dm-modern.css" rel="stylesheet" />
 </head>
-
 <body class="dm-body">
-  <!-- Nav -->
   <header class="dm-nav" id="mainNav">
     <div class="dm-container dm-nav-inner">
-      <a class="dm-brand" href="index.html" aria-label="Home">
-        <img class="dm-logo" src="assets/img/LogoDM.png" alt="DM logo" />
-      </a>
-
+      <a class="dm-brand" href="index.html" aria-label="Home"><img class="dm-logo" src="assets/img/LogoDM.png" alt="DM logo" /></a>
       <nav class="dm-nav-links" aria-label="Primary">
         <a href="#work">Work</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
-
-      <button class="dm-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="dm-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
-
     <div class="dm-mobile-menu dm-container" hidden>
       <a href="#work">Work</a>
       <a href="about.html">About</a>
@@ -40,313 +28,204 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <main>
-    <section class="dm-hero" aria-label="Intro">
+    <section class="dm-hero" aria-label="Introduction">
       <div class="dm-container dm-hero-grid">
         <div class="dm-hero-left">
           <h1 class="dm-hero-pixel">
-            BUILDING PRECISE<br />
-            INTERACTIVE EXPERIENCES
+            <span class="dm-hero-line">DESIGNING CLEAR</span>
+            <span class="dm-hero-line">DIGITAL</span>
+            <span class="dm-hero-line">EXPERIENCES</span>
           </h1>
-
           <div class="dm-hero-meta">
             <div class="dm-hero-name">Deacon Mizzi</div>
-            <div class="dm-hero-role">Interactive Developer & Designer</div>
+            <div class="dm-hero-role">UI/UX Designer & Interactive Developer</div>
           </div>
-
-          <p class="dm-hero-sub">
-            I design and develop games, web apps, and tools, combining systems thinking with clean UX and strong visuals.
-          </p>
-
+          <p class="dm-hero-sub">I create user-focused interfaces, visual systems, web products, and games, carrying ideas from structure and interaction through to polished execution.</p>
           <div class="dm-hero-cta">
             <a class="dm-btn dm-btn-primary" href="#work">View Work</a>
             <a class="dm-btn dm-btn-secondary" href="contact.html">Contact</a>
           </div>
         </div>
 
-        <div class="dm-stack" aria-label="Highlighted projects">
-        
-          <!-- BACK -->
-          <a class="dm-stack-card dm-stack-card--back" href="project-podium.html">
-            <img src="assets/img/podium1.png" alt="Podium App preview">
+        <div class="dm-stack" aria-label="Flagship projects">
+          <a class="dm-stack-card dm-stack-card--back" href="project-thelastember.html">
+            <img src="assets/img/hero-thelastember.png" alt="The Last Ember gameplay preview" />
+            <span class="dm-stack-label">The Last Ember</span>
           </a>
-
-          <!-- MID -->
-          <a class="dm-stack-card dm-stack-card--mid" href="project-evershroud.html">
-            <img src="assets/img/hero-evershroud.png" alt="Evershroud game preview">
+          <a class="dm-stack-card dm-stack-card--mid" href="project-podium.html">
+            <img src="assets/img/podium1.png" alt="Podium product interface preview" />
+            <span class="dm-stack-label">Podium</span>
           </a>
-
-          <!-- FRONT -->
-          <a class="dm-stack-card dm-stack-card--front" href="project-thelastember.html">
-            <img src="assets/img/hero-thelastember.png" alt="The Last Ember game preview">
+          <a class="dm-stack-card dm-stack-card--front dm-stack-card--contain" href="project-fes.html">
+            <img src="assets/img/fes.png" alt="FES mobile-first UI/UX case study preview" />
+            <span class="dm-stack-label">FES UI/UX Case Study</span>
           </a>
-
         </div>
       </div>
     </section>
 
-    <!-- All Work -->
-    <section class="dm-work" id="work" aria-label="All work">
+    <section class="dm-selected-work" id="work" aria-labelledby="selected-work-title">
+      <div class="dm-container">
+        <div class="dm-selected-header">
+          <div>
+            <p class="dm-section-kicker">Selected Work</p>
+            <h2 class="dm-section-title" id="selected-work-title">Three projects that define my work</h2>
+          </div>
+          <p>Interface design leads my practice, supported by the development and systems thinking needed to turn ideas into working experiences.</p>
+        </div>
+
+        <div class="dm-feature-grid">
+          <a class="dm-feature-card dm-feature-card--lead" href="project-fes.html">
+            <div class="dm-feature-media dm-feature-media--contain"><img src="assets/img/fes.png" alt="FES mobile-first website redesign case study" loading="lazy" /></div>
+            <div class="dm-feature-content">
+              <div class="dm-feature-topline"><span>01 / UI/UX Design</span><span>2025 / Tender Proposal</span></div>
+              <h3>Foundation for Educational Services</h3>
+              <p>A solo, mobile-first interface system created for an employer tender proposal, bringing payments, documents, bookings, and child pickup into one consistent experience.</p>
+              <div class="dm-tags"><span class="dm-tag dm-tag--grad">UI/UX</span><span class="dm-tag dm-tag--grad">Figma</span><span class="dm-tag dm-tag--grad">Interface Systems</span></div>
+              <span class="dm-feature-link">View case study <span aria-hidden="true">&rarr;</span></span>
+            </div>
+          </a>
+
+          <a class="dm-feature-card" href="project-podium.html">
+            <div class="dm-feature-media dm-feature-media--contain"><img src="assets/img/podium.png" alt="Podium Commander tracking product" loading="lazy" /></div>
+            <div class="dm-feature-content">
+              <div class="dm-feature-topline"><span>02 / Product Development</span><span>2025-present</span></div>
+              <h3>Podium</h3>
+              <p>An actively developed personal product that turns multiplayer Commander sessions into clear statistics, comparisons, and long-term insights.</p>
+              <div class="dm-tags"><span class="dm-tag dm-tag--grad">React</span><span class="dm-tag dm-tag--grad">Firebase</span><span class="dm-tag dm-tag--grad">Product UI</span></div>
+              <span class="dm-feature-link">View project <span aria-hidden="true">&rarr;</span></span>
+            </div>
+          </a>
+
+          <a class="dm-feature-card" href="project-thelastember.html">
+            <div class="dm-feature-media dm-feature-media--contain"><img src="assets/img/lastember.png" alt="The Last Ember game" loading="lazy" /></div>
+            <div class="dm-feature-content">
+              <div class="dm-feature-topline"><span>03 / Game & Narrative Design</span><span>2025 / Dissertation</span></div>
+              <h3>The Last Ember</h3>
+              <p>A solo dissertation project exploring branching narrative, player choice, abilities, and world-state changes across a dying fantasy world.</p>
+              <div class="dm-tags"><span class="dm-tag dm-tag--grad">Unity</span><span class="dm-tag dm-tag--grad">Systems Design</span><span class="dm-tag dm-tag--grad">Narrative</span></div>
+              <span class="dm-feature-link">View project <span aria-hidden="true">&rarr;</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="dm-capabilities" aria-labelledby="capabilities-title">
+      <div class="dm-container">
+        <div class="dm-capabilities-intro">
+          <p class="dm-section-kicker">How I Work</p>
+          <h2 class="dm-section-title" id="capabilities-title">Design decisions backed by technical understanding</h2>
+        </div>
+        <div class="dm-capability-grid">
+          <article><span>01</span><h3>UI/UX & Product Design</h3><p>Information architecture, user flows, prototyping, responsive interfaces, and reusable design systems.</p></article>
+          <article><span>02</span><h3>Interactive Development</h3><p>Frontend products, Unity systems, working prototypes, and custom tools that make complex interactions understandable.</p></article>
+          <article><span>03</span><h3>Brand, Motion & Content</h3><p>Identity systems, campaign editing, and digital visuals shaped around a clear communication goal.</p></article>
+        </div>
+        <div class="dm-current-context" aria-label="Current professional context">
+          <span>Lead Associate at Grant Thornton Malta</span>
+          <span>Co-founder of Midja</span>
+          <span>Professional Diploma in UX Design</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="dm-work" id="all-projects" aria-label="Project archive">
       <div class="dm-container">
         <div class="dm-work-header">
-          <h2 class="dm-section-title">All Work</h2>
-
-          <div class="dm-filters" role="tablist" aria-label="Work filters">
-            <button class="dm-filter is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
-            <button class="dm-filter" type="button" data-filter="games" role="tab" aria-selected="false">Games</button>
-            <button class="dm-filter" type="button" data-filter="web" role="tab" aria-selected="false">Web</button>
-            <button class="dm-filter" type="button" data-filter="uiux" role="tab" aria-selected="false">Design & Motion</button>
-            <button class="dm-filter" type="button" data-filter="tools" role="tab" aria-selected="false">Tools</button>
+          <div>
+            <p class="dm-section-kicker">Project Archive</p>
+            <h2 class="dm-section-title">More work across design and development</h2>
+          </div>
+          <div class="dm-filters" aria-label="Filter project archive">
+            <button class="dm-filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="dm-filter" type="button" data-filter="uiux" aria-pressed="false">Design & Motion</button>
+            <button class="dm-filter" type="button" data-filter="web" aria-pressed="false">Web</button>
+            <button class="dm-filter" type="button" data-filter="games" aria-pressed="false">Games</button>
+            <button class="dm-filter" type="button" data-filter="tools" aria-pressed="false">Tools</button>
           </div>
         </div>
 
-        <!-- Collections (Option B) -->
-
-        <!-- GAMES -->
-        <section class="dm-collection" data-section="games">
-          <div class="dm-collection-head">
-            <h3>Game Development</h3>
-            <p>Mechanics, systems, and playable experiences</p>
-          </div>
-
+        <section class="dm-collection" data-section="uiux">
+          <div class="dm-collection-head"><h3>Digital Design & Motion</h3><p>Identity, interface, motion, and visual communication shaped around clear ideas.</p></div>
           <div class="dm-cards">
-            <a class="dm-card" href="project-evershroud.html" data-category="games">
-              <div class="dm-card-media">
-                <img src="assets/img/Evershroud.png" alt="Evershroud" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Evershroud</div>
-                <div class="dm-card-sub">Pixel-art action RPG</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">Unity</span>
-                  <span class="dm-tag dm-tag--grad">Action-Adventure</span>
-                </div>
-              </div>
+            <a class="dm-card" href="project-fes.html" data-category="uiux">
+              <div class="dm-card-media"><img src="assets/img/fes.png" alt="Foundation for Educational Services UI and UX proposal" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2025 / Employer Tender Proposal</div><div class="dm-card-title">Foundation for Educational Services</div><div class="dm-card-sub">Mobile-first service interface concept</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">UI/UX</span><span class="dm-tag dm-tag--grad">Figma</span></div></div>
             </a>
-
-            <a class="dm-card" href="project-thelastember.html" data-category="games">
-              <div class="dm-card-media">
-                <img src="assets/img/lastember.png" alt="The Last Ember" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">The Last Ember</div>
-                <div class="dm-card-sub">Branching narrative adventure</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">Unity</span>
-                  <span class="dm-tag dm-tag--grad">Narrative-based</span>
-                  <span class="dm-tag dm-tag--grad">Action-Adventure</span>
-                </div>
-              </div>
+            <a class="dm-card" href="project-malta-business-wallet.html" data-category="uiux">
+              <div class="dm-card-media"><img src="assets/img/maltabusinesswallet.png" alt="Malta Business Wallet promotional video project" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2026 / Employer Project</div><div class="dm-card-title">Malta Business Wallet</div><div class="dm-card-sub">Launch and promotional video editing</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">Video Editing</span><span class="dm-tag dm-tag--grad">Motion</span></div></div>
             </a>
-
-            <a class="dm-card" href="project-fireworkfrenzy.html" data-category="games">
-              <div class="dm-card-media">
-                <img src="assets/img/FireworkFrenzy.png" alt="Firework Frenzy" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Firework Frenzy</div>
-                <div class="dm-card-sub">Bullet-hell minigame</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">Unity</span>
-                  <span class="dm-tag dm-tag--grad">Bullet Hell</span>
-                </div>
-              </div>
+            <a class="dm-card" href="project-midja.html" data-category="uiux">
+              <div class="dm-card-media"><img src="assets/img/midja.png" alt="Midja brand identity" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2026 / Co-founder Project</div><div class="dm-card-title">Midja</div><div class="dm-card-sub">Brand identity for my digital studio</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">Branding</span><span class="dm-tag dm-tag--grad">Visual Identity</span></div></div>
             </a>
-
-            <a class="dm-card" href="project-animaliags.html" data-category="games">
-              <div class="dm-card-media">
-                <img src="assets/img/animaliags.png" alt="Animalia GS" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Animalia GS</div>
-                <div class="dm-card-sub">2D action game</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">Unity</span>
-                  <span class="dm-tag dm-tag--grad">Platformer</span>
-                </div>
-              </div>
+            <a class="dm-card dm-card--bev" href="project-bev.html" data-category="uiux">
+              <div class="dm-card-media"><img src="assets/img/bev2.png" alt="Bird's Eye View brand identity" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2025 / Freelance</div><div class="dm-card-title">Bird's Eye View</div><div class="dm-card-sub">Brand identity and guideline system</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">Branding</span><span class="dm-tag dm-tag--grad">Guidelines</span></div></div>
             </a>
           </div>
         </section>
 
-        <!-- WEB -->
         <section class="dm-collection" data-section="web">
-          <div class="dm-collection-head">
-            <h3>Web Development</h3>
-            <p>Platforms and applications with real functionality</p>
-          </div>
-
+          <div class="dm-collection-head"><h3>Web Development</h3><p>Responsive websites and web applications built around useful, intuitive experiences.</p></div>
           <div class="dm-cards">
             <a class="dm-card" href="project-podium.html" data-category="web">
-              <div class="dm-card-media">
-                <img src="assets/img/podium.png" alt="Podium" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Podium</div>
-                <div class="dm-card-sub">MTG Stat Tracker</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">React</span>
-                  <span class="dm-tag dm-tag--grad">Full-Stack</span>
-                  <span class="dm-tag dm-tag--grad">UI/UX Design</span>
-                </div>
-              </div>
+              <div class="dm-card-media"><img src="assets/img/podium.png" alt="Podium Commander session and statistics platform" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2025-present / Personal / Active</div><div class="dm-card-title">Podium</div><div class="dm-card-sub">Commander session and statistics platform</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">React</span><span class="dm-tag dm-tag--grad">Firebase</span></div></div>
             </a>
-
+            <a class="dm-card" href="project-drivingacademy.html" data-category="web">
+              <div class="dm-card-media"><img src="assets/img/WayneDrivingAcademy.png" alt="Wayne Driving Academy website" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2024-present / Freelance / Live</div><div class="dm-card-title">Wayne Driving Academy</div><div class="dm-card-sub">Maintained local business website</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">UI/UX</span><span class="dm-tag dm-tag--grad">Frontend</span></div></div>
+            </a>
+            <a class="dm-card" href="project-animalia.html" data-category="web">
+              <div class="dm-card-media"><img src="assets/img/animalia.png" alt="Animalia series website" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2025 / Academic / Live</div><div class="dm-card-title">Animalia</div><div class="dm-card-sub">Series website and visual identity</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">UI/UX</span><span class="dm-tag dm-tag--grad">Frontend</span></div></div>
+            </a>
             <a class="dm-card" href="project-linkup.html" data-category="web">
-              <div class="dm-card-media">
-                <img src="assets/img/LinkUp.png" alt="LinkUp" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">LinkUp</div>
-                <div class="dm-card-sub">Social media platform</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">PHP</span>
-                  <span class="dm-tag dm-tag--grad">Frontend</span>
-                </div>
-              </div>
+              <div class="dm-card-media"><img src="assets/img/LinkUp.png" alt="LinkUp social platform" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2024 / Solo Academic Project</div><div class="dm-card-title">LinkUp</div><div class="dm-card-sub">Social platform with roles and community features</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">PHP</span><span class="dm-tag dm-tag--grad">Database</span></div></div>
             </a>
-
             <a class="dm-card" href="project-infinitetales.html" data-category="web">
-              <div class="dm-card-media">
-                <img src="assets/img/InfiniteTales.png" alt="Infinite Tales" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Infinite Tales</div>
-                <div class="dm-card-sub">Interactive storytelling platform</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">PHP</span>
-                  <span class="dm-tag dm-tag--grad">Frontend</span>
-                </div>
-              </div>
+              <div class="dm-card-media"><img src="assets/img/InfiniteTales.png" alt="Infinite Tales bookstore platform" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2024 / Solo Academic Project</div><div class="dm-card-title">Infinite Tales</div><div class="dm-card-sub">Book discovery, ratings, and wishlists</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">PHP</span><span class="dm-tag dm-tag--grad">SQL</span></div></div>
             </a>
           </div>
         </section>
 
-        <!-- DIGITAL DESIGN & MOTION -->
-        <section class="dm-collection" data-section="uiux">
-          <div class="dm-collection-head">
-            <h3>Digital Design & Motion</h3>
-            <p>Design-led websites, Branding, User Experience, Videos & Animations </p>
-          </div>
-          
+        <section class="dm-collection" data-section="games">
+          <div class="dm-collection-head"><h3>Game Development</h3><p>Interactive experiences focused on gameplay systems, narrative, level design, and player choice.</p></div>
           <div class="dm-cards">
-              
-            <a class="dm-card" href="project-malta-business-wallet.html" data-category="uiux">
-              <div class="dm-card-media">
-                <img src="assets/img/maltabusinesswallet.png" alt="Malta Business Wallet" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Malta Business Wallet</div>
-                <div class="dm-card-sub">Launch Promotional Videos</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">Video Editing</span>
-                  <span class="dm-tag dm-tag--grad">Visual Design</span>
-                </div>
-              </div>
+            <a class="dm-card" href="project-thelastember.html" data-category="games">
+              <div class="dm-card-media"><img src="assets/img/lastember.png" alt="The Last Ember game" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2025 / Solo Academic Dissertation</div><div class="dm-card-title">The Last Ember</div><div class="dm-card-sub">Branching narrative action-adventure</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">Unity</span><span class="dm-tag dm-tag--grad">Narrative Systems</span></div></div>
             </a>
-
-              <a class="dm-card" href="project-midja.html" data-category="uiux">
-              <div class="dm-card-media">
-                <img src="assets/img/midja.png" alt="Midja.mt branding" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Midja</div>
-                <div class="dm-card-sub">Brand design & guidelines showcase</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">Branding</span>
-                  <span class="dm-tag dm-tag--grad">Guidelines</span>
-                  <span class="dm-tag dm-tag--grad">Graphic Design</span>
-                </div>
-              </div>
+            <a class="dm-card" href="project-evershroud.html" data-category="games">
+              <div class="dm-card-media"><img src="assets/img/Evershroud.png" alt="Evershroud action RPG" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2024-2025 / Academic / Planned Rework</div><div class="dm-card-title">Evershroud</div><div class="dm-card-sub">Solo pixel-art action RPG</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">Unity</span><span class="dm-tag dm-tag--grad">Game Systems</span></div></div>
             </a>
-
-            <a class="dm-card" href="project-fes.html" data-category="uiux">
-              <div class="dm-card-media">
-                <img src="assets/img/fes.png" alt="Foundation for Educational Services platform" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Foundation for Educational Services</div>
-                <div class="dm-card-sub">Mobile-first service platform redesign</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">UI/UX</span>
-                  <span class="dm-tag dm-tag--grad">Web Design</span>
-                  <span class="dm-tag dm-tag--grad">Case Study</span>
-                </div>
-              </div>
+            <a class="dm-card" href="project-animaliags.html" data-category="games">
+              <div class="dm-card-media"><img src="assets/img/animaliags.png" alt="Animalia Grassland Showdown" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2025 / Academic / Playable</div><div class="dm-card-title">Animalia: Grassland Showdown</div><div class="dm-card-sub">Character abilities, cutscenes, and a boss fight</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">Unity</span><span class="dm-tag dm-tag--grad">2D Action</span></div></div>
             </a>
-
-            <a class="dm-card dm-card--bev" href="project-bev.html" data-category="uiux">
-              <div class="dm-card-media">
-                <img src="assets/img/bev2.png" alt="Bird’s Eye View branding" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Bird’s Eye View</div>
-                <div class="dm-card-sub">Brand identity & guidelines</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">Branding</span>
-                  <span class="dm-tag dm-tag--grad">Guidelines</span>
-                  <span class="dm-tag dm-tag--grad">Graphic Design</span>
-                </div>
-              </div>
-            </a>
-
-         
-
-            <a class="dm-card" href="project-animalia.html" data-category="uiux">
-              <div class="dm-card-media">
-                <img src="assets/img/animalia.png" alt="Animalia website" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Animalia</div>
-                <div class="dm-card-sub">Series website & visual identity</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">UI/UX</span>
-                  <span class="dm-tag dm-tag--grad">Frontend</span>
-                </div>
-              </div>
-            </a>
-
-            <a class="dm-card" href="project-drivingacademy.html" data-category="uiux">
-              <div class="dm-card-media">
-                <img src="assets/img/WayneDrivingAcademy.png" alt="Wayne Driving Academy" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Wayne Driving Academy</div>
-                <div class="dm-card-sub">Conversion-focused business website</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">UI/UX</span>
-                  <span class="dm-tag dm-tag--grad">Frontend</span>
-                </div>
-              </div>
+            <a class="dm-card" href="project-fireworkfrenzy.html" data-category="games">
+              <div class="dm-card-media"><img src="assets/img/FireworkFrenzy.png" alt="Firework Frenzy bullet-hell game" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2024 / Academic Prototype</div><div class="dm-card-title">Firework Frenzy</div><div class="dm-card-sub">Escalating bullet-hell survival minigame</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">Unity</span><span class="dm-tag dm-tag--grad">Game Balance</span></div></div>
             </a>
           </div>
         </section>
 
-        <!-- TOOLS -->
         <section class="dm-collection" data-section="tools">
-          <div class="dm-collection-head">
-            <h3>Tools & Systems</h3>
-            <p>Tooling that supports content creation and efficient workflows</p>
-          </div>
-
+          <div class="dm-collection-head"><h3>Tools & Systems</h3><p>Custom tooling built to make complex content easier to create and manage.</p></div>
           <div class="dm-cards">
             <a class="dm-card" href="project-editortool.html" data-category="tools">
-              <div class="dm-card-media">
-                <img src="assets/img/editortool.png" alt="Quest Editor Tool" loading="lazy">
-              </div>
-              <div class="dm-card-body">
-                <div class="dm-card-title">Quest Editor Tool</div>
-                <div class="dm-card-sub">Node-based quest editor</div>
-                <div class="dm-tags">
-                  <span class="dm-tag dm-tag--grad">Unity</span>
-                  <span class="dm-tag dm-tag--grad">Editor Tools</span>
-                </div>
-              </div>
+              <div class="dm-card-media"><img src="assets/img/editortool.png" alt="Unity Quest Editor Tool" loading="lazy" /></div>
+              <div class="dm-card-body"><div class="dm-card-meta">2024 / Solo Academic Project</div><div class="dm-card-title">Quest Editor Tool</div><div class="dm-card-sub">Node-based quest and dialogue workflow</div><div class="dm-tags"><span class="dm-tag dm-tag--grad">Unity</span><span class="dm-tag dm-tag--grad">Editor Tools</span></div></div>
             </a>
           </div>
         </section>
-
       </div>
     </section>
   </main>
@@ -354,15 +233,11 @@
   <footer class="dm-footer">
     <div class="dm-container">
       <div class="dm-footer-inner">
-        <span> &copy; <span id="dmYear"></span> Deacon Mizzi</span>
-        <span class="dm-footer-links">
-          <a href="contact.html">Contact</a>
-          <a href="#work">Work</a>
-        </span>
+        <span>&copy; <span id="dmYear"></span> Deacon Mizzi</span>
+        <span class="dm-footer-links"><a href="contact.html">Contact</a><a href="#work">Work</a></span>
       </div>
     </div>
   </footer>
-
   <script src="js/scripts.js"></script>
 </body>
 </html>

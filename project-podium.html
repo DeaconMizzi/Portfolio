@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Podium - Project</title>
+<meta name="description" content="Podium, a React and Firebase product designed and developed by Deacon Mizzi for tracking Magic: The Gathering Commander sessions, decks, players, and statistics."/>
+<title>Podium - Product Design &amp; Development</title>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
 <link href="css/styles.css" rel="stylesheet">
@@ -31,6 +31,7 @@
 <a href="contact.html">Contact</a>
 </div>
 </header>
+
 <main>
 <section aria-label="Project intro" class="dm-project-hero">
 <div class="dm-container">
@@ -42,123 +43,291 @@
 <h1 class="dm-project-title">Podium</h1>
 <div class="dm-prose">
 <p>
-           Podium is a web application built for Magic: The Gathering Commander playgroups who want structured, competitive tracking of their multiplayer sessions. 
-           It replaces spreadsheets and scattered notes with a clean, modern system for logging games, analyzing performance, and visualizing long-term progression.
-          </p>
+  A Commander companion platform that turns multiplayer game nights into clear records, useful statistics, and a shared history for each playgroup.
+  I designed and developed the product solo while teaching myself React, then continued evolving it through real use.
+</p>
 </div>
+<dl class="project-meta" aria-label="Project details">
+<div class="project-meta-item"><dt>Role</dt><dd>Solo Product Designer &amp; Developer</dd></div>
+<div class="project-meta-item"><dt>Context</dt><dd>Personal Product</dd></div>
+<div class="project-meta-item"><dt>Timeline</dt><dd>2025-Present</dd></div>
+<div class="project-meta-item"><dt>Initial Build</dt><dd>Approx. 3 Months</dd></div>
+<div class="project-meta-item"><dt>Platform</dt><dd>Responsive Web App</dd></div>
+<div class="project-meta-item"><dt>Stack</dt><dd>React &amp; Firebase</dd></div>
+<div class="project-meta-item"><dt>Status</dt><dd>Live &amp; Actively Maintained</dd></div>
+</dl>
 </div>
 <div>
-<div class="dm-project-hero-media"><img alt="Podium Banner" loading="lazy" src="assets/img/podium.png"/></div>
+<div class="dm-project-hero-media"><img alt="Podium logo and product banner" loading="lazy" src="assets/img/podium.png"/></div>
 </div>
 </div>
 </div>
 </section>
+
 <section aria-label="Project content" class="dm-project-body">
-<div class="dm-container"><section aria-label="Description" class="dm-project-block">
-<div class="dm-project-block-head">
-<h2 class="dm-section-title">Description</h2>
+<div class="dm-container">
+<section aria-labelledby="podium-context" class="dm-project-block case-study-section">
+<div class="dm-project-block-head case-study-header">
+<p class="case-study-kicker">Product Context</p>
+<h2 class="dm-section-title" id="podium-context">Replacing scattered match records with one shared system</h2>
 </div>
 <div class="dm-prose">
-<p>Podium is a data-driven MTG Commander tracking platform designed around real multiplayer game nights. 
-  Users can create pods, log sessions, record decks and commanders played, and track wins across players and groups. Over time, the app aggregates meaningful statistics such as win rates, head-to-head records, pod-size performance, and deck efficiency.
-Built with a focus on clarity and usability, Podium transforms casual match history into transparent, competitive insight. 
-The interface is designed for dark-mode environments and structured dashboards, ensuring results remain readable, scalable, and easy to analyze across long-term playgroups.</p>
-<section aria-label="Gallery" class="dm-project-block">
-<div class="dm-project-block-head">
-<h2 class="dm-section-title">Gallery</h2>
+<p>
+  Commander groups often rely on memory, notes, or spreadsheets to track games. Those methods become difficult to maintain once players rotate, decks change, and a group wants to compare performance over time.
+</p>
+<p>
+  Podium brings that activity into one responsive product. Players can manage playgroups, decks, commanders, and card collections, log sessions, and review personal or group-level statistics without rebuilding the same context after every game night.
+</p>
 </div>
-  <div aria-label="Podium Mockup carousel" class="dm-carousel" data-carousel>
-            <div class="dm-carousel-viewport">
-              <div class="dm-carousel-track">
-                <button aria-label="Podium Mockup 01" class="dm-shot dm-carousel-slide is-active" data-shot="assets/img/portfolio/PodiumPost04.png" data-shot-group="podium-carousel" type="button"><img alt="Podium Phone Mockup 1" loading="lazy" src="assets/img/portfolio/PodiumPost04.png" /></button> 
-                <button aria-label="Podium Mockup 01" class="dm-shot dm-carousel-slide is-active" data-shot="assets/img/portfolio/PodiumPost03.png" data-shot-group="podium-carousel" type="button"><img alt="Podium Phone Mockup 2" loading="lazy" src="assets/img/portfolio/PodiumPost03.png" /></button> 
-                <button aria-label="Podium Mockup 01" class="dm-shot dm-carousel-slide is-active" data-shot="assets/img/portfolio/PodiumPost01.png" data-shot-group="podium-carousel" type="button"><img alt="Podium Phone Screen 1" loading="lazy" src="assets/img/portfolio/PodiumPost01.png" /></button> 
-                <button aria-label="Podium Mockup 01" class="dm-shot dm-carousel-slide is-active" data-shot="assets/img/portfolio/PodiumPost02.png" data-shot-group="podium-carousel" type="button"><img alt="Podium Phone Mockup 2" loading="lazy" src="assets/img/portfolio/PodiumPost02.png" /></button>               
-              </div>
-            </div>
-
-            <div class="dm-carousel-controls">
-              <button aria-label="Previous image" class="dm-carousel-arrow dm-carousel-arrow--prev" data-carousel-prev type="button">Prev</button>
-              <div aria-label="Choose carousel page" class="dm-carousel-dots" role="tablist">
-                <button aria-label="Show page 01" aria-selected="true" class="dm-carousel-dot is-active" data-carousel-dot="0" role="tab" type="button"></button>
-                <button aria-label="Show page 02" aria-selected="false" class="dm-carousel-dot" data-carousel-dot="1" role="tab" type="button"></button>
-                <button aria-label="Show page 03" aria-selected="false" class="dm-carousel-dot" data-carousel-dot="2" role="tab" type="button"></button>
-                <button aria-label="Show page 04" aria-selected="false" class="dm-carousel-dot" data-carousel-dot="3" role="tab" type="button"></button>
-              </div>
-              <button aria-label="Next image" class="dm-carousel-arrow dm-carousel-arrow--next" data-carousel-next type="button">Next</button>
-            </div>
-          </div>
-          <br>
-<div class="dm-gallery">
-<button aria-label="Posts" class="dm-shot" data-shot="assets/img/portfolio/Podium1.png" type="button">
-<img alt="Posts" loading="lazy" src="assets/img/portfolio/Podium1.png"/>
-</button><button aria-label="Roles" class="dm-shot" data-shot="assets/img/portfolio/Podium2.png" type="button">
-<img alt="Roles" loading="lazy" src="assets/img/portfolio/Podium2.png"/>
-</button><button aria-label="Account" class="dm-shot" data-shot="assets/img/portfolio/Podium3.png" type="button">
-<img alt="Account" loading="lazy" src="assets/img/portfolio/Podium3.png"/>
-</button><button aria-label="Post Page" class="dm-shot" data-shot="assets/img/portfolio/podium4.png" type="button">
-<img alt="Post Page" loading="lazy" src="assets/img/portfolio/podium4.png"/>
-</button>
-<button aria-label="Post Page" class="dm-shot" data-shot="assets/img/portfolio/podium5.png" type="button">
-<img alt="Post Page" loading="lazy" src="assets/img/portfolio/podium5.png"/>
-</button>
-<button aria-label="Post Page" class="dm-shot" data-shot="assets/img/portfolio/podium6.png" type="button">
-<img alt="Post Page" loading="lazy" src="assets/img/portfolio/podium6.png"/>
-</button>
+<div class="challenge-grid" aria-label="Product scope">
+<article class="challenge-item"><span>01</span><h3>My Contribution</h3><p>Product direction, user flows, visual identity, responsive UI, frontend architecture, data model, and implementation.</p></article>
+<article class="challenge-item"><span>02</span><h3>Core Audience</h3><p>Commander players and recurring playgroups who want faster logging and a reliable shared history.</p></article>
+<article class="challenge-item"><span>03</span><h3>Current Product</h3><p>A deployed application that is actively maintained as its workflows, statistics, and interface continue to mature.</p></article>
 </div>
 </section>
 
-<section class="project-notes">
-  <h3>Challenges</h3>
-
-  <p><strong>Learning React While Building at Scale</strong><br>
-    Podium was my first large-scale project built with React. Instead of experimenting with small demos, I committed to building a production-level application with complex state management, dynamic forms, conditional rendering, and reusable components. Structuring the app properly from the beginning while still learning React patterns was a significant challenge.
-  </p>
-
-  <p><strong>Managing a Large, Evolving Codebase</strong><br>
-    As the project grew to include sessions, groups, player identities, deck imports, statistics, and dashboards, maintaining consistency across components became increasingly complex. Refactoring early architectural decisions without breaking functionality required careful planning and iterative restructuring.
-  </p>
-
-  <p><strong>Firebase Security &amp; Permission Architecture</strong><br>
-    Implementing Firestore security rules and user-based permissions proved to be one of the most technically demanding aspects. Ensuring that users could only access their groups, players could claim identities securely, session data remained protected, and queries did not break due to rule restrictions required multiple revisions of the database structure and rule logic. Debugging permission-denied errors in production-like scenarios forced a deeper understanding of Firebase’s security model.
-  </p>
-
-  <h3>Insights</h3>
-
-  <p><strong>Build Structure Early, Even While Learning</strong><br>
-    Jumping straight into a full application accelerated my learning far more than isolated tutorials. Designing with scalability in mind from the beginning saved significant refactoring later.
-  </p>
-
-  <p><strong>Security Rules Shape Architecture</strong><br>
-    Firestore permissions are not an afterthought. They directly influence how data should be structured. I learned to design collections and document relationships around security constraints, not just convenience.
-  </p>
-
-  <p><strong>Data Becomes a Product Feature</strong><br>
-    Tracking multiplayer Commander sessions revealed how raw data transforms casual gameplay into measurable progression. Designing meaningful analytics such as win rates, head-to-head stats, and pod performance required thinking beyond basic CRUD and into product strategy.
-  </p>
-
-  <p><strong>Iteration is Design</strong><br>
-    UI and branding went through multiple redesigns. The biggest insight was that identity, clarity, and usability evolve together. A strong product feel is rarely achieved in the first version.
-  </p>
-  <div class="button-container">
-  <a class="btn btn-primary enlarged-btn" href="https://mtgpodium.vercel.app/" target="_blank">
-                    🔗 Check out the Website
-                  </a>
-  </div>
-</section>
-</section>
-
-
+<section aria-labelledby="podium-challenge" class="dm-project-block case-study-section">
+<div class="dm-project-block-head case-study-header">
+<p class="case-study-kicker">The Challenge</p>
+<h2 class="dm-section-title" id="podium-challenge">Make structured tracking feel lighter than a spreadsheet</h2>
+<div class="dm-prose">
+<p>
+  The product needed enough structure to generate trustworthy statistics without slowing down the social setting it was designed for. Every extra field could improve the data while also making the app less convenient to use at the table.
+</p>
+</div>
+</div>
+<div class="challenge-grid">
+<article class="challenge-item"><span>01</span><h3>Fast At The Table</h3><p>Reduce repeated setup and keep the session form focused on information that affects the final record.</p></article>
+<article class="challenge-item"><span>02</span><h3>Flexible Groups</h3><p>Support different pod sizes, team formats, recurring players, and changing deck choices without losing session history.</p></article>
+<article class="challenge-item"><span>03</span><h3>Useful Statistics</h3><p>Turn recorded results into readable comparisons across commanders, decks, game formats, pod sizes, and recent form.</p></article>
 </div>
 </section>
+
+<section aria-labelledby="podium-loop" class="dm-project-block case-study-section">
+<div class="dm-project-block-head case-study-header">
+<p class="case-study-kicker">Core Product Loop</p>
+<h2 class="dm-section-title" id="podium-loop">From joining a pod to learning from the result</h2>
+<div class="dm-prose">
+<p>
+  I structured Podium around a repeatable loop that keeps setup separate from the actions needed during a game night. Once players and decks exist, each new session becomes faster to record.
+</p>
+</div>
+</div>
+<ol class="process-steps" aria-label="Podium core product flow">
+<li class="process-step" data-step="01"><span>01</span><h3>Open A Playgroup</h3><p>Choose a playgroup and review its recent sessions before recording another match.</p></li>
+<li class="process-step" data-step="02"><span>02</span><h3>Select Players</h3><p>Add the participants involved in the session and keep each result tied to the correct player.</p></li>
+<li class="process-step" data-step="03"><span>03</span><h3>Choose A Deck</h3><p>Select a saved deck or commander so each result retains meaningful context.</p></li>
+<li class="process-step" data-step="04"><span>04</span><h3>Log The Game</h3><p>Record players, format, result, and optional details through one focused session form.</p></li>
+<li class="process-step" data-step="05"><span>05</span><h3>Review The Data</h3><p>See personal and group trends update from the newly recorded session.</p></li>
+</ol>
+</section>
+
+<section aria-labelledby="podium-decisions" class="dm-project-block case-study-section">
+<div class="dm-project-block-head case-study-header">
+<p class="case-study-kicker">UX Decisions</p>
+<h2 class="dm-section-title" id="podium-decisions">Designing around real game-night tasks</h2>
+<div class="dm-prose">
+<p>
+  The interface prioritises frequent actions and separates them from deeper analysis. Session logging uses a wide, structured form on desktop, while dashboards surface recent activity and quick actions before detailed statistics.
+</p>
+</div>
+</div>
+<div class="system-showcase">
+<figure class="system-primary">
+<button aria-label="Open Podium Log Game page" class="dm-shot" data-shot="assets/img/portfolio/PodiumLogGame.png" data-shot-group="podium-product" type="button">
+<img alt="Podium Log Game page with participant, deck, format, and match result controls" loading="lazy" src="assets/img/portfolio/PodiumLogGame.png"/>
+</button>
+<figcaption>The session form keeps each player selection, deck choice, and result together in one scannable row.</figcaption>
+</figure>
+<div class="component-strip">
+<figure>
+<button aria-label="Open Podium Home Dashboard page" class="dm-shot" data-shot="assets/img/portfolio/PodiumDashboard.png" data-shot-group="podium-product" type="button"><img alt="Podium dashboard showing recent activity, personal performance, active playgroups, and quick actions" loading="lazy" src="assets/img/portfolio/PodiumDashboard.png"/></button>
+<figcaption>Dashboard and recent activity</figcaption>
+</figure>
+<figure>
+<button aria-label="Open Podium Personal Statistics page" class="dm-shot" data-shot="assets/img/portfolio/PodiumStats.png" data-shot-group="podium-product" type="button"><img alt="Podium personal statistics showing win and loss distribution, game modes, player counts, team games, and recent sessions" loading="lazy" src="assets/img/portfolio/PodiumStats.png"/></button>
+<figcaption>Personal performance breakdown</figcaption>
+</figure>
+</div>
+</div>
+<div class="ux-decisions" aria-label="Podium interaction decisions">
+<article class="ux-decision"><h3>Progressive Detail</h3><p>Common summaries appear first, while deeper breakdowns remain available when a player wants to investigate.</p></article>
+<article class="ux-decision"><h3>Persistent Context</h3><p>Players, pods, decks, and commanders are connected so repeat sessions require less manual entry.</p></article>
+<article class="ux-decision"><h3>Scannable Results</h3><p>Tables, cards, and charts give different kinds of data a consistent hierarchy across the product.</p></article>
+</div>
+</section>
+
+<section aria-labelledby="podium-system" class="dm-project-block case-study-section">
+<div class="dm-project-block-head case-study-header">
+<p class="case-study-kicker">Product System</p>
+<h2 class="dm-section-title" id="podium-system">Connecting decks, card data, and group history</h2>
+<div class="dm-prose">
+<p>
+  Podium grew from a session tracker into a broader Commander library. Deck and commander records enrich each match, while Scryfall-backed card data helps players search, inspect, and organise the cards connected to their decks.
+</p>
+<p>
+  The same underlying session data can then support personal dashboards and deeper group comparisons without asking users to enter the result more than once.
+</p>
+</div>
+</div>
+<div class="system-showcase">
+<figure class="system-primary">
+<button aria-label="Open Podium Deck View page" class="dm-shot" data-shot="assets/img/portfolio/PodiumDeckView.png" data-shot-group="podium-product" type="button">
+<img alt="Podium Deck View with grouped cards, deck controls, statistics, and Scryfall-powered previews" loading="lazy" src="assets/img/portfolio/PodiumDeckView.png"/>
+</button>
+<figcaption>Deck browsing combines grouped card categories with an in-context card preview.</figcaption>
+</figure>
+<div class="component-strip">
+<figure>
+<button aria-label="Open Podium Collection page" class="dm-shot" data-shot="assets/img/portfolio/PodiumCollection.png" data-shot-group="podium-product" type="button"><img alt="Podium Collection showing card printings, quantities, values, and deck allocations" loading="lazy" src="assets/img/portfolio/PodiumCollection.png"/></button>
+<figcaption>Physical card collection and deck allocations</figcaption>
+</figure>
+<figure>
+<button aria-label="Open Podium Builds page" class="dm-shot" data-shot="assets/img/portfolio/PodiumBuilds.png" data-shot-group="podium-product" type="button"><img alt="Podium Builds page showing works in progress, commanders, completion, and acquisition stages" loading="lazy" src="assets/img/portfolio/PodiumBuilds.png"/></button>
+<figcaption>Works in progress and card acquisition stages</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="podium-build" class="dm-project-block case-study-section">
+<div class="dm-project-block-head case-study-header">
+<p class="case-study-kicker">Development &amp; Iteration</p>
+<h2 class="dm-section-title" id="podium-build">Learning React through a product that kept growing</h2>
+<div class="dm-prose">
+<p>
+  Podium was my first large React product. Building a real application rather than a small exercise meant learning component structure, state, dynamic forms, conditional interfaces, and reusable patterns while the feature set was actively expanding.
+</p>
+<p>
+  I designed the interface directly in React rather than creating a separate Figma prototype. Working in the browser let me evaluate layout, responsive behaviour, interaction states, and technical constraints together, then refine each workflow in the functioning product.
+</p>
+<p>
+  Firebase permissions became part of the product architecture rather than a final technical task. Playgroup membership, deck visibility, and private session records required the data model and security rules to evolve together. Refactoring those early decisions taught me to plan ownership and access before adding another interface layer.
+</p>
+</div>
+</div>
+<div class="challenge-grid">
+<article class="challenge-item"><span>01</span><h3>Design In Code</h3><p>Building interface decisions directly in React connected visual refinement, responsive behaviour, and reusable component structure.</p></article>
+<article class="challenge-item"><span>02</span><h3>Permission Design</h3><p>Firestore rules and user roles shaped how playgroups, deck visibility, and private session records needed to be organised.</p></article>
+<article class="challenge-item"><span>03</span><h3>Ongoing Refactoring</h3><p>New workflows exposed early assumptions, leading to iterative improvements in both the interface and application structure.</p></article>
+</div>
+</section>
+
+<section aria-labelledby="podium-gallery" class="dm-project-block case-study-section">
+<div class="dm-project-block-head case-study-header">
+<p class="case-study-kicker">Product Walkthrough</p>
+<h2 class="dm-section-title" id="podium-gallery">A connected view across the Podium platform</h2>
+<div class="dm-prose"><p>Podium brings deck management, collection tracking, match history, playgroup sessions, and personal analytics into one connected interface. Select any screen for a closer look.</p></div>
+</div>
+<div class="podium-page-groups">
+<section class="podium-page-group" aria-labelledby="podium-core-pages">
+<div class="podium-page-group-head"><span>01</span><h3 id="podium-core-pages">Core pages</h3></div>
+<div class="podium-page-grid">
+<figure class="podium-page-card podium-page-card--wide">
+<button aria-label="Open Podium Home Dashboard page" class="dm-shot" data-shot="assets/img/portfolio/PodiumDashboard.png" data-shot-group="podium-pages" type="button"><img alt="Podium Home Dashboard with recent activity, performance, playgroups, commanders, and matches" loading="lazy" src="assets/img/portfolio/PodiumDashboard.png"/></button>
+<figcaption><h4>Home / Dashboard</h4><p>Gives players an overview of recent activity, personal performance, active playgroups, most-played commanders, and recent matches, with quick access to common actions.</p></figcaption>
+</figure>
+<figure class="podium-page-card">
+<button aria-label="Open Podium Games page" class="dm-shot" data-shot="assets/img/portfolio/PodiumGames.png" data-shot-group="podium-pages" type="button"><img alt="Podium Games page showing match dates, results, commanders, decks, playgroups, and game types" loading="lazy" src="assets/img/portfolio/PodiumGames.png"/></button>
+<figcaption><h4>Games</h4><p>Displays the player's match history across playgroups, with each row showing its date, result, commander, deck, pod, and game type.</p></figcaption>
+</figure>
+<figure class="podium-page-card">
+<button aria-label="Open Podium My Decks page" class="dm-shot" data-shot="assets/img/portfolio/PodiumDecks.png" data-shot-group="podium-pages" type="button"><img alt="Podium My Decks library with commander artwork, search, archive, import, and game logging controls" loading="lazy" src="assets/img/portfolio/PodiumDecks.png"/></button>
+<figcaption><h4>My Decks</h4><p>Acts as a personal deck library for creating or importing lists, searching and filtering decks, reviewing performance, managing visibility, and quickly logging games.</p></figcaption>
+</figure>
+<figure class="podium-page-card">
+<button aria-label="Open Podium Deck View page" class="dm-shot" data-shot="assets/img/portfolio/PodiumDeckView.png" data-shot-group="podium-pages" type="button"><img alt="Podium Deck View with gallery, list, and grouped card layouts plus editing and statistics controls" loading="lazy" src="assets/img/portfolio/PodiumDeckView.png"/></button>
+<figcaption><h4>Deck View</h4><p>Provides gallery, list, and grouped layouts with Scryfall artwork and previews, a clear deck summary, editing controls, and a direct route to log a game.</p></figcaption>
+</figure>
+<figure class="podium-page-card">
+<button aria-label="Open Podium Commanders page" class="dm-shot" data-shot="assets/img/portfolio/PodiumCommanderStats.png" data-shot-group="podium-pages" type="button"><img alt="Podium commander analytics showing games, wins, win rate, form, usage, and performance trends" loading="lazy" src="assets/img/portfolio/PodiumCommanderStats.png"/></button>
+<figcaption><h4>Commanders</h4><p>Analyses commander performance across recorded games through games played, wins, win rate, recent form, playgroup usage, trends, and contextual filters.</p></figcaption>
+</figure>
+<figure class="podium-page-card">
+<button aria-label="Open Podium Collection page" class="dm-shot" data-shot="assets/img/portfolio/PodiumCollection.png" data-shot-group="podium-pages" type="button"><img alt="Podium Collection showing printings, quantities, available copies, card values, and deck allocations" loading="lazy" src="assets/img/portfolio/PodiumCollection.png"/></button>
+<figcaption><h4>Collection</h4><p>Manages the physical card library, tracking printings, quantities, available and allocated copies, values, and the decks or builds using each card.</p></figcaption>
+</figure>
+</div>
+</section>
+
+<section class="podium-page-group" aria-labelledby="podium-build-pages">
+<div class="podium-page-group-head"><span>02</span><h3 id="podium-build-pages">Deck-building pages</h3></div>
+<div class="podium-page-grid">
+<figure class="podium-page-card">
+<button aria-label="Open Podium Builds page" class="dm-shot" data-shot="assets/img/portfolio/PodiumBuilds.png" data-shot-group="podium-pages" type="button"><img alt="Podium Builds page with commanders, completion progress, and card acquisition stages" loading="lazy" src="assets/img/portfolio/PodiumBuilds.png"/></button>
+<figcaption><h4>Builds</h4><p>Organises works in progress by commander and completion, moving cards through Needed, Bought, Collected, In Deck, and Maybeboard stages.</p></figcaption>
+</figure>
+<figure class="podium-page-card">
+<button aria-label="Open Podium Build Workspace page" class="dm-shot" data-shot="assets/img/portfolio/PodiumBuildView.png" data-shot-group="podium-pages" type="button"><img alt="Podium Build Workspace with card acquisition stages, readiness, imports, exports, prices, suggestions, and history" loading="lazy" src="assets/img/portfolio/PodiumBuildView.png"/></button>
+<figcaption><h4>Build Workspace</h4><p>Supports decklist imports and exports, card acquisition stages, readiness tracking, prices, suggestions, multiple card layouts, and change history.</p></figcaption>
+</figure>
+</div>
+</section>
+
+<section class="podium-page-group" aria-labelledby="podium-playgroup-pages">
+<div class="podium-page-group-head"><span>03</span><h3 id="podium-playgroup-pages">Playgroup pages</h3></div>
+<div class="podium-page-grid">
+<figure class="podium-page-card">
+<button aria-label="Open Podium Playgroup Overview page" class="dm-shot" data-shot="assets/img/portfolio/PodiumPlaygroups.png" data-shot-group="podium-pages" type="button"><img alt="Podium Playgroup Overview showing group sessions, winners, formats, participants, and management actions" loading="lazy" src="assets/img/portfolio/PodiumPlaygroups.png"/></button>
+<figcaption><h4>Playgroup Overview</h4><p>Brings a group's session history, winners, formats, and participants together with direct access to logging, editing, players, changes, and settings.</p></figcaption>
+</figure>
+<figure class="podium-page-card">
+<button aria-label="Open Podium Log Game page" class="dm-shot" data-shot="assets/img/portfolio/PodiumLogGame.png" data-shot-group="podium-pages" type="button"><img alt="Podium Log Game page with participants, decks, commanders, format, results, teams, turns, and session details" loading="lazy" src="assets/img/portfolio/PodiumLogGame.png"/></button>
+<figcaption><h4>Log Game</h4><p>Records a new playgroup match by selecting participants, decks or commanders, format, individual results, teams, turns, and optional session details before saving.</p></figcaption>
+</figure>
+</div>
+</section>
+
+<section class="podium-page-group" aria-labelledby="podium-community-pages">
+<div class="podium-page-group-head"><span>04</span><h3 id="podium-community-pages">Community &amp; personal insights</h3></div>
+<div class="podium-page-grid">
+<figure class="podium-page-card">
+<button aria-label="Open Podium Friends and Requests page" class="dm-shot" data-shot="assets/img/portfolio/PodiumFriends.png" data-shot-group="podium-pages" type="button"><img alt="Podium Friends and Requests page with player search, invitations, pending requests, and friends" loading="lazy" src="assets/img/portfolio/PodiumFriends.png"/></button>
+<figcaption><h4>Friends &amp; Requests</h4><p>Supports player search, friend requests and responses, pending invitations, and quick access to existing friends.</p></figcaption>
+</figure>
+<figure class="podium-page-card">
+<button aria-label="Open Podium Personal Statistics page" class="dm-shot" data-shot="assets/img/portfolio/PodiumStats.png" data-shot-group="podium-pages" type="button"><img alt="Podium Personal Statistics with win and loss distribution, game modes, player counts, team games, and recent sessions" loading="lazy" src="assets/img/portfolio/PodiumStats.png"/></button>
+<figcaption><h4>Personal Statistics</h4><p>Provides analytics across all playgroups, including win and loss distribution, game modes, results by player count, team-game performance, and recent sessions.</p></figcaption>
+</figure>
+</div>
+</section>
+</div>
+</section>
+
+<section aria-labelledby="podium-outcome" class="dm-project-block case-study-section project-reflection">
+<div class="dm-project-block-head case-study-header">
+<p class="case-study-kicker">Outcome &amp; Reflection</p>
+<h2 class="dm-section-title" id="podium-outcome">A live product and an ongoing design practice</h2>
+<div class="dm-prose">
+<p>
+  Podium progressed from a three-month learning project into a deployed product that I continue to maintain. It demonstrates how I connect product thinking, interface design, data modelling, and frontend implementation across one evolving system.
+</p>
+<p>
+  The main lesson has been that iteration is not separate from design. Real workflows expose where terminology, hierarchy, permissions, and architecture need to change, and each release creates better evidence for the next decision.
+</p>
+</div>
+</div>
+<div class="reflection-grid">
+<article><h3>Product Thinking</h3><p>Raw match data only becomes useful when the product turns it into understandable decisions and comparisons.</p></article>
+<article><h3>System Design</h3><p>Interface structure, data ownership, and security rules must support the same model of the product.</p></article>
+<article><h3>Continuous Improvement</h3><p>The active product remains a place to refine workflows, visual consistency, performance, and responsive behaviour.</p></article>
+</div>
+<div class="case-study-actions">
+<a class="dm-btn dm-btn-primary" href="https://mtgpodium.vercel.app/" target="_blank" rel="noopener">Visit Podium</a>
+</div>
+</section>
+</div>
+</section>
+
 <div class="lightbox" id="lightbox">
 <img alt="Expanded view" id="lightbox-img" src=""/>
 </div>
 </main>
+
 <footer class="dm-footer">
 <div class="dm-container">
 <div class="dm-footer-inner">
-<span> &copy; <span id="dmYear"></span> Deacon Mizzi</span>
+<span>&copy; <span id="dmYear"></span> Deacon Mizzi</span>
 <span class="dm-footer-links">
 <a href="contact.html">Contact</a>
 <a href="index.html#work">Work</a>
